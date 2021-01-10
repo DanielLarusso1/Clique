@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <style media="screen">
+    @font-face{
+      font-family: Roboto; src: url('Roboto.ttf');
+    }
+    body {
+      font-family: Roboto;
+    }
+    </style>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+  <div class="container">
+    <p class="head"><img src="signup-img.png" alt="">Registration: STEP 1</p>
+    <div class="info">
+      <label for="name" name="Name">Name</label>
+      <input type="text" name="Name" id="Name" required>
+  </div>
+  <div class="info">
+    <label for="Enrollment" name="Enrollment Number">Enrollment Number</label>
+    <input type="text" name="Enrollment" id="Enrollment" pattern="[0-9]{8}" required>
+  </div>
+  <div class="info">
+    <label for="email" name="Institute Email">Institute Email</label>
+    <input type="email" name="Email" id="Email" pattern="[a-z0-9._%+-]+@[a-z]+.iitr.ac.in" required>
+  </div>
+  <div class="info">
+    <label for="branch">Branch</label>
+    <select name="Branch" required>
+      <option value="">Select Branch</option>
+      <option value="BioTechnology">BioTechnology</option>
+      <option value="Metallurgy">Metallurgy</option>
+      <option value="Mechanical">Mechanical</option>
+      <option value="Chemical">Chemical</option>
+      <option value="Civil">Civil</option>
+      <option value="Computer">Computer Science</option>
+      <option value="Electronics">Electronics & Communication</option>
+      <option value="Electrical">Electrical</option>
+    </select>
+  </div>
+  <div class="info">
+    <label for="graduation" name="graduation">Year of Graduation</label>
+    <input type="text" name="graduation" id="graduation" pattern="[0-9]{4}" required>
+  </div>
+  <div class="info">
+    <label for="phone" name="Phone Number">Phone Number</label>
+    <input type="text" name="Phone" pattern="[0-9]{10}" required>
+  </div>
+  <div class="info">
+    <label for="password" name="password">Set Password</label>
+    <input type="password" name="password" class="form-control" required="">
+  </div>
+  <div class="info">
+    <label for="confirmpassword" name="confirmpassword">Confirm Password</label>
+    <input type="password" class="form-control" name="password_confirmation" required="">
+  </div>
+  <div class="spec">
+    <button type="button" name="homepage" style="margin-right: 10%;"><a href="start.html">HOME</a></button>
+    <button type="button" name="next" style="margin-left: 10%;"><a href="regis2.html">NEXT</a></button>
+  </div>
+  </div>
+</body>
+</html>

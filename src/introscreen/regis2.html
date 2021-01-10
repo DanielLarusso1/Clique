@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <style media="screen">
+    @font-face{
+      font-family: Roboto; src: url('Roboto.ttf');
+    }
+    body {
+      font-family: Roboto;
+    }
+    </style>
+    <link rel="stylesheet" href="reg.css">
+  </head>
+  <body>
+    <div class="container">
+      <p class="head"><img src="signup-img.png" alt="">Registration: STEP 2</p>
+      <p class="head2">The course I would like to mentor for:</p>
+      <div class="info">
+        <label for="course">Select Course</label>
+        <select name="course" required>
+          <option value="">Courses</option>
+          <option value="man001">MAN-001 Mathematics</option>
+          <option value="phn007">PHN-007 Modern Physics</option>
+          <option value="hsn001a">HSN-001A Basic English</option>
+          <option value="hsn001b">HSN-001B Advanced English</option>
+          <option value="hsn002">HSN-002 Psychology</option>
+          <option value="cen105">CEN-105 Environmental Science</option>
+        </select>
+    </div>
+    <div class="info">
+      <label for="points" name="points">Points Obtained</label>
+      <input type="text" name="points" pattern="[0-9]{2}" required>
+    </div>
+    <div class="info">
+      <textarea name="description" rows="8" cols="50" placeholder="Enter description"></textarea>
+    </div>
+    <hr style="width: 90%; text-align: center; height: 2px; background-color: black;">
+    <p class="head2">The course I would like to get a mentor:</p>
+    <div class="info">
+      <label for="course">Select Course</label>
+      <select name="course" required>
+        <option value="">Courses</option>
+        <option value="man001">MAN-001 Mathematics</option>
+        <option value="phn007">PHN-007 Modern Physics</option>
+        <option value="hsn001a">HSN-001A Basic English</option>
+        <option value="hsn001b">HSN-001B Advanced English</option>
+        <option value="hsn002">HSN-002 Psychology</option>
+        <option value="cen105">CEN-105 Environmental Science</option>
+      </select>
+  </div>
+  <div class="spec">
+    <button type="button" name="homepage" style="margin-right: 10%;"><a href="registration.html">BACK</a></button>
+    <button type="button" name="next" style="margin-left: 10%;"><a href="submit.html">SUBMIT</a></button>
+  </div>
+  </body>
+</html>

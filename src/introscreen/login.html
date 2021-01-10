@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"
+    <title>LOGIN</title>
+    <style media="screen">
+    @font-face{
+      font-family: Roboto; src: url('Roboto.ttf');
+    }
+    body {
+      font-family: Roboto;
+    }
+    </style>
+    <link rel="stylesheet" href="reg.css">
+  </head>
+  <body>
+    <div class="container">
+      <p class="head"><img src="signup-img.png" alt="">LOGIN</p>
+      <div class="info">
+        <label for="Enrollment" name="Enrollment Number">Enrollment Number</label>
+        <input type="text" name="Enrollment" id="Enrollment" pattern="[0-9]{8}" required>
+      </div>
+      <div class="info">
+        <label for="password" name="password">Password</label>
+        <input type="password" name="password" class="form-control" required="">
+      </div>
+      <div class="spec">
+        <button type="button" name="login"><a href="dashboard.html">Login</a></button>
+      </div>
+      <p class="head2">Not registered yet? <a href="registration.html" style="color: blue;">Sign up here</a></p>
+    </div>
+  </body>
+</html>
